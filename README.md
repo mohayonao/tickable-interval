@@ -1,5 +1,7 @@
 # tickable-interval
+[![Build Status](http://img.shields.io/travis/mohayonao/tickable-interval.svg?style=flat)](https://travis-ci.org/mohayonao/tickable-interval)
 [![NPM Version](http://img.shields.io/npm/v/tickable-interval.svg?style=flat)](https://www.npmjs.org/package/tickable-interval)
+
 
 Manual ticking `setInterval`.
 
