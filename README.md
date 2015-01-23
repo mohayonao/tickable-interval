@@ -16,7 +16,7 @@ npm install tickable-interval
 ## API
 
 ### TickableInterval
-  - `TickableInterface()`
+  - `TickableInterval()`
 
 #### Instance properties
   - `callback: function`
