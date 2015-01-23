@@ -1,11 +1,13 @@
 # tickable-interval
 [![Build Status](http://img.shields.io/travis/mohayonao/tickable-interval.svg?style=flat)](https://travis-ci.org/mohayonao/tickable-interval)
 [![NPM Version](http://img.shields.io/npm/v/tickable-interval.svg?style=flat)](https://www.npmjs.org/package/tickable-interval)
+[![6to5](http://img.shields.io/badge/module-6to5-yellow.svg?style=flat)](https://6to5.org/)
 
-
-Manual ticking `setInterval`.
+Manual ticking `setInterval` / `clearInterval`
 
 ## Installation
+
+npm:
 
 ```
 npm install tickable-interval
@@ -13,9 +15,19 @@ npm install tickable-interval
 
 ## API
 
+### TickableInterval
+  - `TickableInterface()`
+
+#### Instance properties
+  - `callback: function`
+  - `interval: number`
+  - `remain: number`
+
+#### Instance methods
+
 - `set(callback: function, interval: number): void`
 - `clear(): void`
-- `tick(tick: number): void`
+- `tick(tick: number = 1): void`
 
 ## Example
 
