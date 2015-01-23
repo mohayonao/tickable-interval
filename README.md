@@ -20,12 +20,12 @@ npm install tickable-interval
 
 #### Instance properties
   - `callback: function`
-  - `interval: number`
+  - `delay: number`
   - `remain: number`
 
 #### Instance methods
 
-- `set(callback: function, interval: number): void`
+- `set(callback: function, delay: number): void`
 - `clear(): void`
 - `tick(tick: number = 1): void`
 
