@@ -1,7 +1,7 @@
 {
   "name": "tickable-interval",
-  "description": "Manual ticking `setInterval`",
-  "version": "0.0.1",
+  "description": "Manual ticking setInterval / clearInterval",
+  "version": "0.0.2",
   "author": "mohayonao <mohayonao@gmail.com>",
   "bugs": {
     "url": "https://github.com/mohayonao/tickable-interval/issues"
@@ -19,6 +19,8 @@
   "keywords": [
     "timer",
     "interval",
+    "setInterval",
+    "clearInterval",
     "test"
   ],
   "license": "MIT",
