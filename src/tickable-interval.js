@@ -4,26 +4,26 @@
  * The manual ticking `setInterval` / `clearInterval`
  * @class
  * @property {function} callback
- * @property {number} interval
+ * @property {number} delay
  * @property {number} remain
  */
 export class TickableInterval {
   constructor() {
     this.callback = null;
-    this.interval = Infinity;
+    this.delay = Infinity;
     this.remain = Infinity;
   }
 
   /**
    * setInterval
    * @param {function} callback
-   * @param {number} interval
+   * @param {number} delay
    * @public
    */
-  set(callback, interval) {
+  set(callback, delay) {
     this.callback = callback;
-    this.interval = Math.max(1, +interval|0);
-    this.remain = this.interval;
+    this.delay = Math.max(1, +delay|0);
+    this.remain = this.delay;
   }
 
   /**
@@ -32,7 +32,7 @@ export class TickableInterval {
    */
   clear() {
     this.callback = null;
-    this.interval = Infinity;
+    this.delay = Infinity;
     this.remain = Infinity;
   }
 
@@ -47,7 +47,7 @@ export class TickableInterval {
       this.remain -= tick;
       while (this.remain <= 0) {
         this.callback();
-        this.remain += this.interval;
+        this.remain += this.delay;
       }
     }
   }
